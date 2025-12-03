@@ -3,23 +3,23 @@ package unioeste.geral.endereco.bo;
 import java.io.Serializable;
 
 public class Bairro implements Serializable {
-    private String codigo;
+    private Long id;
     private String nome;
 
     public Bairro() {
     }
 
-    public Bairro(String codigo, String nome) {
-        this.codigo = codigo;
+    public Bairro(Long id, String nome) {
+        this.id = id;
         this.nome = nome;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public Long getId() {
+        return id;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {

@@ -3,25 +3,25 @@ package unioeste.geral.endereco.bo;
 import java.io.Serializable;
 
 public class Cidade implements Serializable {
-    private String codigo;
+    private Long id;
     private String nome;
     private UnidadeFederativa unidadeFederativa;
 
     public Cidade() {
     }
 
-    public Cidade(String codigo, String nome, UnidadeFederativa unidadeFederativa) {
-        this.codigo = codigo;
+    public Cidade(Long id, String nome, UnidadeFederativa unidadeFederativa) {
+        this.id = id;
         this.nome = nome;
         this.unidadeFederativa = unidadeFederativa;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public Long getId() {
+        return id;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {

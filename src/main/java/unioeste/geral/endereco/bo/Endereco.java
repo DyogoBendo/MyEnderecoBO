@@ -3,7 +3,7 @@ package unioeste.geral.endereco.bo;
 import java.io.Serializable;
 
 public class Endereco implements Serializable {
-    private String codigo;
+    private Long id;
     private String cep;
     private Cidade cidade;
     private Bairro bairro;
@@ -12,20 +12,20 @@ public class Endereco implements Serializable {
     public Endereco() {
     }
 
-    public Endereco(String codigo, String cep, Cidade cidade, Bairro bairro, Logradouro logradouro) {
-        this.codigo = codigo;
+    public Endereco(Long id, String cep, Cidade cidade, Bairro bairro, Logradouro logradouro) {
+        this.id = id;
         this.cep = cep;
         this.cidade = cidade;
         this.bairro = bairro;
         this.logradouro = logradouro;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public Long getId() {
+        return id;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getCep() {
