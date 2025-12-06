@@ -5,15 +5,15 @@ import java.io.Serializable;
 public class Logradouro implements Serializable {
     private Long id;
     private String nome;
-    private TipoLogradouro tipologradouro;
+    private TipoLogradouro tipoLogradouro;
 
     public Logradouro() {
     }
 
-    public Logradouro(Long id, String nome, TipoLogradouro tipologradouro) {
+    public Logradouro(Long id, String nome, TipoLogradouro tipoLogradouro) {
         this.id = id;
         this.nome = nome;
-        this.tipologradouro = tipologradouro;
+        this.tipoLogradouro = tipoLogradouro;
     }
 
     public Long getId() {
@@ -32,11 +32,11 @@ public class Logradouro implements Serializable {
         this.nome = nome;
     }
 
-    public TipoLogradouro getTipologradouro() {
-        return tipologradouro;
+    public TipoLogradouro getTipoLogradouro() {
+        return tipoLogradouro;
     }
 
-    public void setTipologradouro(TipoLogradouro tipologradouro) {
-        this.tipologradouro = tipologradouro;
+    public void setTipoLogradouro(TipoLogradouro tipoLogradouro) {
+        this.tipoLogradouro = tipoLogradouro;
     }
 }

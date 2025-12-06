@@ -1,6 +1,8 @@
 package unioeste.geral.endereco.bo;
 
-public class EnderecoEspecifico {
+import java.io.Serializable;
+
+public class EnderecoEspecifico implements Serializable {
     private Endereco endereco;
     private String complemento;
     private Long nroCasa;
