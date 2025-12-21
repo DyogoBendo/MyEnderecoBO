@@ -7,6 +7,9 @@ public class EnderecoEspecifico implements Serializable {
     private String complemento;
     private Long nroCasa;
 
+    public EnderecoEspecifico() {
+    }
+
     public EnderecoEspecifico(Endereco endereco, String complemento, Long nroCasa) {
         this.endereco = endereco;
         this.complemento = complemento;
